@@ -1,0 +1,12 @@
+{
+  "name": "Gumby Tutorial",
+  "version": "0.0.0",
+  "authors": [
+    "Adam Chambers <adammchambers@gmail.com>"
+  ],
+  "description": "A tutorial covering the basics of installing, configuring and building a Gumby project",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://gumbyframework.com/tutorial",
+  "private": true
+}
