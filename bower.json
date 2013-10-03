@@ -8,5 +8,12 @@
   "main": "index.html",
   "license": "MIT",
   "homepage": "http://gumbyframework.com/tutorial",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "gumby": "latest",
+    "gumby-parallax": "latest",
+    "gumby-images": "latest",
+    "gumby-shuffle": "latest",
+    "gumby-fittext": "latest"
+  }
 }

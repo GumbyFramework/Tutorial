@@ -1,0 +1,17 @@
+{
+  "name": "gumby-images",
+  "version": "1.0.0",
+  "main": [
+    "./gumby.images.js"
+  ],
+  "homepage": "https://github.com/GumbyFramework/ResponsiveImages",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.0",
+    "commit": "440a32e4d81e4f0bd24a8780d0c8a5a86d07db9c"
+  },
+  "_source": "git://github.com/GumbyFramework/ResponsiveImages.git",
+  "_target": "*",
+  "_originalSource": "gumby-images"
+}

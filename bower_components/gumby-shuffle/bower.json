@@ -1,0 +1,5 @@
+{
+  "name": "gumby-shuffle",
+  "version": "1.0.1",
+  "main": ["./gumby.shuffle.js"]
+}
