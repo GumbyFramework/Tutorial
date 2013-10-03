@@ -3,9 +3,9 @@
 
 
 // Grid Settings
-$row-max-width: 940px !default;    				// 940px
+$row-max-width: 1100px !default;    			// 940px
 $gutter-in-px: 20px !default;      				// 20px
-$cols: 12 !default;              				// 12 Column Default Grid
+$cols: 14 !default;              				// 12 Column Default Grid
 $hybrid: 16 !default;							// 16 Column Default Hybrid Grid
 
 // Responsiveness Settings
@@ -15,17 +15,18 @@ $document-width: $row-max-width;				// Default Document
 $max-device-width: 2880px;						// Max Document Size
 
 // Spacing
-$nav-distance: 0; 							// Navigation distance from the top of the viewport
+$nav-distance: 0px; 							// Navigation distance from the top of the viewport
 
 // Typography
-$font-family: "Open Sans";
+$font-family: "Lato";
 $font-style-italic: italic;
 $icons: entypo;
 $font-smoothing: antialiased;
 
 // Font Weights
+$font-weight-xbold: 900; 
 $font-weight-bold: 700;
-$font-weight-semibold: 600;
+$font-weight-semibold: 700;
 $font-weight-medium: 400;
 $font-weight-regular: 400;
 $font-weight-light: 300;
@@ -46,7 +47,7 @@ $rhythm-height: .711;
 // Modular Scale Settings
 // http://www.modularscale.com by Tim Brown
 // https://github.com/scottkellum/modular-scale
-$ratio: golden();						// Ratio for Modular Scale
+$ratio: fifth();						// Ratio for Modular Scale
 $base-font-size: 16px !default;
 $importantNum: 78px !default;
 $base-size: $base-font-size $importantNum;
@@ -62,35 +63,36 @@ $larger: ms(3);
 $xlarge: ms(4);
 $xxlarge: ms(5);
 $xxxlarge: ms(6);
+$xxxxlarge: ms(7);
 $reallybig: ms(8);
 $tremendous: ms(9);
 $absurd: ms(10);
 
 // Typography Colors
 $header-font-color: #444444 !default;
-$header-link-color: #d04526 !default;
-$header-link-hover-color: #c03d20 !default;
+$header-link-color: #444444 !default;
+$header-link-hover-color: #fff !default;
 $body-font-color: #555555 !default;
-$body-link-color: #d04526 !default;
-$body-link-hover-color: #c03d20 !default;
+$body-link-color: #142c44 !default;
+$body-link-hover-color: #2f465d !default;
 
 // User Interface Colors
 $global-bg-color: #fff;
-$navbar-color: #4a4d50;
-$navbar-link-color: #fff;
+$navbar-color: #f0f0f0;
+$navbar-link-color: #444;
 
-$primary-color: #3085d6;
-$secondary-color: #42a35a;
+$primary-color: #2d47df;
+$secondary-color: #508c08;
 $default-color: #f2f2f2;
-$info-color: #4a4d50;
+$info-color: #f0f0f0;
 $danger-color: #ca3838;
 $warning-color: #f6b83f;
 $success-color: #58c026;
 
-$primary-hover-color: #58b2fa;
-$secondary-hover-color: #6dbb80;
+$primary-hover-color: #3951de;
+$secondary-hover-color: #538b10;
 $default-hover-color: #ffffff;
-$info-hover-color: #868d92;
+$info-hover-color: #e9e9e9;
 $danger-hover-color: #f14f4f;
 $warning-hover-color: #fdd27f;
 $success-hover-color: #66d92f;
@@ -115,16 +117,6 @@ $small-button-font-size: $small;
 $default-button-padding: $med;
 // Height
 $default-button-height: 36px;
-
-// Form Elements
-$form-text-input-stroke: #ccc;
-$form-text-input-background: $white;
-$form-text-input-placeholder-color: $default-color;
-$form-text-input-color: #555;
-
-$form-select-stroke: #ccc;
-$form-select-background: $white;
-$form-select-color: #555;
 
 // Tabs
 $tab-height: 42px;
