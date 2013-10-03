@@ -1,6 +1,23 @@
 {
 	"build": {
 		"gumbyPath": "bower_components/gumby",
-		"outPath": "js"
+		"outPath": "js",
+		"modules": [
+			"fixed",
+			"navbar",
+			"retina",
+			"skiplink",
+			"toggleswitch",
+			"validation"
+		],
+		"addons": [
+			"bower_components/gumby-parallax/gumby.parallax.js",
+			"bower_components/gumby-images/gumby.images.js",
+			"bower_components/gumby-shuffle/gumby.shuffle.js",
+			"bower_components/gumby-fittext/gumby.fittext.js"
+		],
+		"files": [
+			"js/main.js"
+		]
 	}
 }
