@@ -43,6 +43,53 @@
 
 <body>
 
+	<!-- Start #modal -->
+	<div class="modal" id="modal">
+		<div class="content">
+		 	<a class="close switch" gumby-trigger="|#modal"><i class="icon-cancel" /></i></a>
+		 	<div class="hide row find-dealer">
+			    <div>
+			    	<h4>Find a dealer</h4>
+					<form action="" method="">
+						<ul>
+							<li class="field"><input type="text" class="input text" placeholder="Your zip code" /></li>
+						</ul>
+					</form>
+					<iframe width="100%" height="240px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=New+Haven,+CT,+United+States&amp;aq=0&amp;oq=new+havebn&amp;sll=53.800651,-4.064941&amp;sspn=8.03717,21.774902&amp;ie=UTF8&amp;hq=&amp;hnear=New+Haven,+Connecticut,+United+States&amp;ll=41.317274,-72.927884&amp;spn=0.039902,0.085058&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+	        	</div>
+			</div>
+			<div class="hide row get-quote">
+			    <div>
+			    	<h4>Get a Quote</h4>
+			    	<p>Please fill out the form and one of our Tardis professionals will be in touch.</p>
+					<form action="" method="" id="quote">
+						<ul>
+							<li class="field"><input type="text" name="name" class="input text" placeholder="Your Name" /></li>
+							<li class="field"><input type="email" name="email" class="input text" placeholder="Your Email" /></li>
+							<li class="field"><input type="tel" name="phone" class="input text" placeholder="Your phone number" /></li>
+							<li class="field">
+								<div class="picker">
+								    <select name="version">
+										<option value="#">Select version</option>
+										<option disabled>----------</option>
+										<option>Type-40</option>
+										<option>Type-40x</option>
+										<option>Type-40y</option>
+								    </select>  
+								</div>
+							</li>
+							<li class="field">
+								<textarea class="input textarea" placeholder="Custom specifications..."></textarea>
+							</li>
+							<li><p class="btn primary medium"><input type="submit" value="Purchase!" /></p></li>
+						</ul>
+					</form>
+	        	</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #modal -->
+
 	<!-- start .meta-nav -->
 	<nav class="meta-nav row">
 		<ul class="pull_right">
