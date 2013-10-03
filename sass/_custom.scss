@@ -1,1 +1,157 @@
 // Your custom SCSS should be written here...
+
+// typography
+h1, h2, .btn a, .btn input, .btn button, .navbar li a {
+	text-transform: uppercase;
+}
+
+h1.xlarge {
+	font-weight: $font-weight-xbold;
+	white-space: nowrap;
+	@include respond(portrait-tablets) {
+		@include font-size($xxxxlarge);
+	}
+	span {
+		display: block;
+		font-weight: $font-weight-regular;
+		line-height: 0;
+		@include font-size($large);
+	}
+}
+
+h3.xlarge, p.xlarge {
+	font-weight: $font-weight-light;
+	@include font-size($xlarge);
+}
+
+sup {
+	position: relative;
+	top: -10px;
+	@include font-size($med);
+}
+
+// helpers
+.tablet-center {
+	&, p {
+		@include respond(portrait-tablets) {
+			text-align: center;
+		}
+	}
+}
+
+// meta nav
+.meta-nav li {
+	display: inline;
+	margin-left: 20px;
+	@include font-size(ms(-1));
+}
+
+// primary nav
+.navbar {
+	margin-bottom: 0;
+	padding: 10px 0;
+	.field i.icon-search {
+		position: absolute;
+		top: 1px;
+		right: 3%;
+	}
+	.logo a {
+		padding-left: 0;
+	}
+}
+
+// masthead
+#masthead {
+	background: url(../img/bg_masthead.jpg) no-repeat #000;
+	@include background-size(cover);
+	h1, p {
+		color: #fff;
+	}
+	ul li {
+		display: block;
+		float: left;
+		margin: 10px 10px 0 0;
+	}
+	.valign {
+		height: 400px;
+	}
+	.features p {
+		line-height: $med;
+		@include font-size($med);
+	}
+}
+
+// highlights
+#highlights {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	figure {
+		figcaption {
+			@include font-size($med);
+		}
+		@include respond(portrait-tablets) {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+// main content
+#main {
+	padding-top: 30px;
+	& > article.row {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+}
+
+#fishfingers {
+	border-bottom: solid 1px #ededed;
+	line-height: 100%;
+	.copy {
+		padding-top: 10%;
+	}
+}
+
+#extras .columns {
+	@include respond(portrait-tablets) {
+		margin-bottom: 60px;
+	}
+}
+
+#cta {
+	border-top: solid 1px #eeeeee;
+	border-bottom: solid 1px #eeeeee;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	@include respond(portrait-tablets) {
+		&, p {
+			text-align: center;
+		}
+	}
+	.btn {
+		margin-top: 10px;
+	}
+}
+
+// footer
+#foot-links {
+	.two.columns {
+		@include respond(portrait-tablets) {
+			width: 25% !important;
+			float: left;
+			margin-bottom: 30px;
+		}
+	}
+	ul {
+		margin-bottom: 20px;
+		@include fancytiles(8,8,4);
+		li {
+			@include font-size($small);
+			&:first-child a {
+				font-weight: bold;
+			}
+		}
+	}
+}
