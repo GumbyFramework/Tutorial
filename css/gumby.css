@@ -2697,6 +2697,7 @@ h1, h2, .btn a, .btn input, .btn button, .navbar li a { text-transform: uppercas
 
 h1.xlarge { font-weight: 900; white-space: nowrap; }
 @media only screen and (max-width: 768px) { h1.xlarge { font-size: 78px; font-size: 4.875rem; } }
+@media only screen and (max-width: 320px) { h1.xlarge { font-size: 52px; font-size: 3.25rem; } }
 h1.xlarge span { display: block; font-weight: 400; line-height: 0; font-size: 24px; font-size: 1.5rem; }
 
 h3.xlarge, p.xlarge { font-weight: 300; font-size: 36px; font-size: 2.25rem; }
@@ -2706,12 +2707,14 @@ sup { position: relative; top: -10px; font-size: 23px; font-size: 1.4375rem; }
 @media only screen and (max-width: 768px) { .tablet-center, .tablet-center p { text-align: center; } }
 
 .meta-nav li { display: inline; margin-left: 20px; font-size: 11px; font-size: 0.6875rem; }
+@media only screen and (max-width: 320px) { .meta-nav li { margin-left: 10px; } }
 
 .navbar { margin-bottom: 0; padding: 10px 0; }
 .navbar .field i.icon-search { position: absolute; top: 1px; right: 3%; }
 .navbar .logo a { padding-left: 0; }
 
 #masthead { background: url(../img/bg_masthead.jpg) no-repeat black; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+@media only screen and (max-width: 320px) { #masthead { background-position: -100px 0; background-size: auto; } }
 #masthead h1, #masthead p { color: #fff; }
 #masthead ul li { display: block; float: left; margin: 10px 10px 0 0; }
 #masthead .valign { height: 400px; }

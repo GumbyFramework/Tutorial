@@ -11,6 +11,9 @@ h1.xlarge {
 	@include respond(portrait-tablets) {
 		@include font-size($xxxxlarge);
 	}
+	@include respond(portrait-phones) {
+		@include font-size($xxlarge);
+	}
 	span {
 		display: block;
 		font-weight: $font-weight-regular;
@@ -44,6 +47,9 @@ sup {
 	display: inline;
 	margin-left: 20px;
 	@include font-size(ms(-1));
+	@include respond(portrait-phones) {
+		margin-left: 10px;
+	}
 }
 
 // primary nav
@@ -64,6 +70,10 @@ sup {
 #masthead {
 	background: url(../img/bg_masthead.jpg) no-repeat #000;
 	@include background-size(cover);
+	@include respond(portrait-phones) {
+		background-position: -100px 0;
+		background-size: auto;
+	}
 	h1, p {
 		color: #fff;
 	}
