@@ -16,6 +16,7 @@
 
 		this.rate = 0;
 		this.fontSizes = {};
+		this.debugDelay = 0;
 
 		// set up module based on attributes
 		this.setup();
@@ -33,6 +34,8 @@
 		$(window).on('load resize orientationchange', function() {
 			scope.resize();
 		});
+
+		this.resize();
 	}
 
 	// set up module based on attributes
@@ -45,9 +48,16 @@
 
 	// apply the resizing
 	FitText.prototype.resize = function() {
-		var size = this.calculateSize();
-		Gumby.debug('Updating font size to '+size+'px', this.$el);
+		var size = this.calculateSize(),
+			scope = this;
+		
 		this.$el.css('font-size', size);
+
+		// wrap debug in timeout so not printing on every resize event
+		clearTimeout(this.debugDelay);
+		this.debugDelay = setTimeout(function() {
+			Gumby.debug('Updated font size to '+size+'px', scope.$el);
+		}, 200);
 	};
 
 	// calculate the font size

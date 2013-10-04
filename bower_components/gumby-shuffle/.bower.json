@@ -1,15 +1,15 @@
 {
   "name": "gumby-shuffle",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": [
     "./gumby.shuffle.js"
   ],
   "homepage": "https://github.com/GumbyFramework/Shuffle",
-  "_release": "1.0.1",
+  "_release": "1.0.2",
   "_resolution": {
     "type": "version",
-    "tag": "1.0.1",
-    "commit": "53fb81c440782e317fe2a019548a6434d5cd10e3"
+    "tag": "1.0.2",
+    "commit": "96ba39a2ef810e8b27c7986967505c31a4dc15a6"
   },
   "_source": "git://github.com/GumbyFramework/Shuffle.git",
   "_target": "*",

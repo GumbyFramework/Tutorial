@@ -41,6 +41,8 @@ Using the shuffle module is simple. Add a `gumby-shuffle` attribute to any row c
 		<div class="four columns">…</div>
 		<div class="four columns">…</div>
 	</div>
+	
+*The media queries are passed directly to [JavaScript's matchMedia function](https://developer.mozilla.org/en-US/docs/Web/API/window.matchMedia) which is not supported in <= IE9, but fear not, you can include [Paul Irish's polyfil](https://github.com/paulirish/matchMedia.js/) and all will be well*
 
 
 **MIT Open Source License**

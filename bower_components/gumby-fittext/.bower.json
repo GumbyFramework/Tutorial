@@ -1,15 +1,15 @@
 {
   "name": "gumby-fittext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": [
     "./gumby.fittext.js"
   ],
   "homepage": "https://github.com/GumbyFramework/FitText",
-  "_release": "1.0.0",
+  "_release": "1.0.1",
   "_resolution": {
     "type": "version",
-    "tag": "1.0.0",
-    "commit": "b2a4a5b86655a6e9ca6180459c4fdf0f7ee232ca"
+    "tag": "1.0.1",
+    "commit": "23ca845c12237c0b9a8b7e9ff178f42e921a2760"
   },
   "_source": "git://github.com/GumbyFramework/FitText.git",
   "_target": "*",

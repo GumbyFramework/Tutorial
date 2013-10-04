@@ -7,7 +7,7 @@
 
 	function Shuffle($el) {
 
-		Gumby.debug('Initializing Checkbox', $el);
+		Gumby.debug('Initializing Shuffle', $el);
 
 		this.$el = $el;
 
@@ -37,6 +37,8 @@
 			Gumby.debug('Re-initializing shuffle module', scope.$el);
 			scope.setup();
 		});
+
+		scope.handleTests();
 	}
 
 	// set up module based on attributes
